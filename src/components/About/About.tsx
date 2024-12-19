@@ -6,7 +6,9 @@ const About = () => {
             <div className='about-banner flex mt-24 items-center w-11/12 m-0 mx-auto pb-5'>
                 <div className='about-img-banner'>
                     <div>
-                        <img src="./src/assets/images/heroAo.jpg" alt="Logo" className='about-img w-11/12 h-full rounded-xl' />
+                        {/* <img src="./src/assets/images/heroAo.jpg" alt="Logo" className='about-img w-11/12 h-full rounded-xl' /> */}
+                        <img src="/public/img/eaopic.jpg" alt="Logo" className='img-fluid w-4/5 ml-16' />
+
                     </div>
 
                 </div>

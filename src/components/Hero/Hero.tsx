@@ -40,7 +40,8 @@ const Hero = () => {
                 </div>
 
                 <div className='left-banner w-1/2'>
-                    <img src="./src/assets/images/heroAo.jpg" alt="Logo" className='img-fluid w-4/5 ml-16' />
+                    {/* <img src="./src/assets/images/heroAo.jpg" alt="Logo" className='img-fluid w-4/5 ml-16' /> */}
+                    <img src="/public/img/eaopic.jpg" alt="Logo" className='img-fluid w-4/5 ml-16' />
                 </div>
             </div>
         </section>
