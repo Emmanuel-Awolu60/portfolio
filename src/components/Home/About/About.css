@@ -1,0 +1,11 @@
+@media (max-width:768px) {
+.about-banner{
+    display: block;
+}
+.about-img-banner{
+    margin-bottom: 8rem;
+}
+}
+.resume-banner{
+    background-color: var(--bg-light);
+}
