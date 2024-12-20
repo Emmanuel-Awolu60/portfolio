@@ -1,3 +1,15 @@
+.resume-banner{
+    background-color: var(--bg-light);
+}
+
+.about-img{
+    /* height: 500px !important; */
+}
+
+.about-img-banner {
+    /* border: 2px solid black; */
+}
+
 @media (max-width:768px) {
 .about-banner{
     display: block;
@@ -5,7 +17,5 @@
 .about-img-banner{
     margin-bottom: 8rem;
 }
-}
-.resume-banner{
-    background-color: var(--bg-light);
+
 }
