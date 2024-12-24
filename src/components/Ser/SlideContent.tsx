@@ -1,5 +1,6 @@
 // SlideContent.tsx
 import React from 'react';
+import "./SlideContent.css"
 
 interface SlideContentProps {
     icon: React.ReactNode;
@@ -19,7 +20,7 @@ const SlideContent: React.FC<SlideContentProps> = ({
     onButtonClick = () => { },
 }) => {
     return (
-        <div className='bg-yellow-700 py-16 px-16  m'>
+        <div className='top-div py-16 px-16  mb-32 rounded-lg'>
             <div className="flex items-center mb-4">
                 <span className="text-xl mr-2">{icon}</span>
                 <h1 className="font-bold text-lg">{step}</h1>
