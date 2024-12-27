@@ -45,7 +45,7 @@ const Services: React.FC = () => {
                                 icon={<TbPencilCheck />}
                                 step="01"
                                 title="Tech Writer"
-                                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis esse modi cumque excepturi doloribus."
+                                description="Crafting seamless and dynamic user experiences through cutting-edge web technologies and responsive design principles."
                                 buttonText="Read More"
                                 onButtonClick={() => handleButtonClick("01")}
                             />

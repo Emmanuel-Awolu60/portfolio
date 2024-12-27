@@ -1,10 +1,17 @@
 .top-div{
-padding: 40px 30px;
     transition: all 0.5s ease 0s;
     border-radius: var(--border-radius);
     background-color: var(--bg-light);
-    position: relative;
-    margin-bottom: 20px;
+    /* position: relative; */
+    /* margin-bottom: 20px; */
     border: 1px solid var(--bg-light);
 
+}
+
+h1.number {
+    line-height: 60px;
+    right: 40px;
+    top: 30px;
+    opacity: .07;
+    transition: 0.3s ease-in-out;
 }
