@@ -24,13 +24,13 @@ const Services: React.FC = () => {
 
     return (
         <section className="mt-10">
-            <div className="mt-10 w-11/12 m-0 mx-auto">
+            <div className="mt-10 w-11/12 m-0 mx-auto sm:block">
                 <div className="justify-item-center">
                     <h3 className="title-small">Service</h3>
                     <h1>What I do for you</h1>
                 </div>
 
-                <div className="mt-12 ">
+                <div className=" top-top mt-12  sm:block">
                     <Swiper
                         slidesPerView={3}
                         spaceBetween={30}
@@ -45,7 +45,7 @@ const Services: React.FC = () => {
                                 icon={<TbPencilCheck />}
                                 step="01"
                                 title="Tech Writer"
-                                description="Crafting seamless and dynamic user experiences through cutting-edge web technologies and responsive design principles."
+                                description="Crafting engaging, SEO-optimized content to simplify complex tech concepts."
                                 buttonText="Read More"
                                 onButtonClick={() => handleButtonClick("01")}
                             />
@@ -66,8 +66,8 @@ const Services: React.FC = () => {
                             <SlideContent
                                 icon={<TbPencilCheck />}
                                 step="03"
-                                title="Consulting"
-                                description="Providing tailored solutions to optimize your business processes and technology stack."
+                                title="Backend Development"
+                                description="Building robust, scalable server-side solutions to power seamless user experiences."
                                 buttonText="Contact Me"
                                 onButtonClick={() => handleButtonClick("03")}
                             />
@@ -78,7 +78,7 @@ const Services: React.FC = () => {
                                 icon={<TbDeviceAnalytics />}
                                 step="04"
                                 title="Research & Analysis"
-                                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis esse modi cumque excepturi doloribus."
+                                description="Driving insights through data research and analysis for informed decisions."
                                 buttonText="Read More"
                                 onButtonClick={() => handleButtonClick("01")}
                             />

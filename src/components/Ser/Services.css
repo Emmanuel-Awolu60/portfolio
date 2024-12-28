@@ -1,0 +1,15 @@
+/* SlideContent.css */
+.top-div {
+    display: flex;
+    /* Default display style */
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 640px) {
+    .top-div {
+        display: none;
+        /* Hide SlideContent on small screens */
+    }
+}

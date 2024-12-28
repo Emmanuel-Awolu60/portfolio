@@ -5,7 +5,7 @@
     /* position: relative; */
     /* margin-bottom: 20px; */
     border: 1px solid var(--bg-light);
-
+    display: block;
 }
 
 h1.number {
@@ -15,3 +15,51 @@ h1.number {
     opacity: .07;
     transition: 0.3s ease-in-out;
 }
+
+.T-icon{
+  color: var(--primary-color);
+    font-size: 30px;
+}
+
+
+/* Default styling for larger screens */
+.top-div {
+    display: block;
+}
+
+/* Styling for small screens */
+@media (max-width: 640px) {
+    .top-div {
+        display: flex; /* Switch to flex layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+
+    .T-icon {
+        font-size: 2rem; /* Adjust icon size */
+        margin-bottom: 10px; /* Add spacing below the icon */
+    }
+
+    .number {
+        position: static; /* Remove absolute positioning */
+        font-size: 4rem; /* Adjust font size */
+        margin-bottom: 10px; /* Add spacing below the number */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust title size */
+        margin-bottom: 10px; /* Add spacing below the title */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust description size */
+        text-align: center; /* Center align text */
+        margin-bottom: 15px; /* Add spacing below the description */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button size */
+    }
+}
+
