@@ -1,4 +1,3 @@
-// Services.tsx
 import React from 'react';
 import "./Services.css";
 import { TbPencilCheck } from "react-icons/tb";
@@ -30,15 +29,28 @@ const Services: React.FC = () => {
                     <h1>What I do for you</h1>
                 </div>
 
-                <div className=" top-top mt-12  sm:block">
+                <div className="top-top mt-12 sm:block">
                     <Swiper
-                        slidesPerView={3}
                         spaceBetween={30}
                         pagination={{
                             clickable: true,
                         }}
                         modules={[Pagination]}
                         className="mySwiper"
+                        breakpoints={{
+                            // For screens larger than 1024px
+                            1024: {
+                                slidesPerView: 3,
+                            },
+                            // For screens between 640px and 1024px
+                            640: {
+                                slidesPerView: 2,
+                            },
+                            // For screens smaller than 640px
+                            0: {
+                                slidesPerView: 1,
+                            },
+                        }}
                     >
                         <SwiperSlide>
                             <SlideContent
