@@ -29,7 +29,7 @@ const Services: React.FC = () => {
                     <h1>What I do for you</h1>
                 </div>
 
-                <div className="top-top mt-12 sm:block">
+                <div className="top-top mt-12">
                     <Swiper
                         spaceBetween={30}
                         pagination={{
