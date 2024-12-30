@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import "./Services.css";
 import { TbPencilCheck } from "react-icons/tb";
 import { FaLaptopCode } from "react-icons/fa";
