@@ -25,11 +25,12 @@ const Services: React.FC = () => {
 
     return (
         <section className="mt-10">
-            <div className="mt-10 w-11/12 m-0 mx-auto sm:block">
-                <div className="justify-item-center">
+            <div className="mt-16 w-11/12 m-0 mx-auto sm:block">
+                <div className="flex justify-center items-center flex-col">
                     <h3 className="title-small">Service</h3>
-                    <h1>What I do for you</h1>
+                    <h1 className="text-4xl leading-9">What I do for you</h1>
                 </div>
+
 
                 <div className="top-top mt-12">
                     <Swiper

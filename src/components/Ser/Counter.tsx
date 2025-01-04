@@ -6,7 +6,7 @@ import { RiEmotionHappyLine } from "react-icons/ri";
 const Counter = () => {
     return (
         <section>
-            <div className="flex ">
+            <div className="flex mt-14">
                 <nav>
                     <nav>
                         <FaLaptopCode />
