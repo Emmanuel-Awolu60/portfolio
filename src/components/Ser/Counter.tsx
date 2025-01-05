@@ -6,37 +6,37 @@ import { RiEmotionHappyLine } from "react-icons/ri";
 const Counter = () => {
     return (
         <section>
-            <div className="flex acct-dev mt-20 pt-28 pb-28 mb-10 justify-around justify-items-center">
-                <nav>
-                    <nav>
+            <div className="flex acct-dev mt-20 pt-28 pb-28 mb-10 justify-around">
+                <nav className="flex flex-col items-center">
+                    <div className="text-4xl mb-2">
                         <FaLaptopCode />
-                    </nav>
-                    <p>
-                        Completed projects
-                    </p>
+                    </div>
+                    <p>Completed projects</p>
                 </nav>
 
-                <nav>
-                    <nav>
+                <nav className="flex flex-col items-center">
+                    <div className="text-4xl mb-2">
                         <FcProcess />
-                    </nav>
-                    <p>
-                        Processes
-                    </p>
+                    </div>
+                    <p>Processes</p>
                 </nav>
 
-                <nav>
-                    <nav>
+                <nav className="flex flex-col items-center">
+                    <div className="text-4xl mb-2">
                         <LuPackageOpen />
-                    </nav>
+                    </div>
                     <p>Awards Received</p>
                 </nav>
-                <nav>
-                    <nav><RiEmotionHappyLine /></nav>
+
+                <nav className="flex flex-col items-center">
+                    <div className="text-4xl mb-2">
+                        <RiEmotionHappyLine />
+                    </div>
                     <p>Happy Clients</p>
                 </nav>
             </div>
         </section>
+
     )
 }
 
