@@ -14,10 +14,14 @@ import {
     AccordionItemState,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
-// import data from "/utils/accordion.js";
-import "../../utils/accordion.tsx"
+import data from "../../src/utils/accordion.tsx";
 
-const Counter = () => {
+interface AccordionData {
+    title: string;
+    content: string;
+}
+
+const Counter: React.FC = () => {
     return (
         <section>
             <Accordion
@@ -25,8 +29,8 @@ const Counter = () => {
                 allowMultipleExpanded={false}
                 preExpanded={[0]}
             >
-                {data.map((item, i) => {
-                    const [className, setClassName] = useState(null);
+                {data.map((item: AccordionData, i: number) => {
+                    const [className, setClassName] = useState<string | null>(null);
 
                     return (
                         <AccordionItem
@@ -37,7 +41,7 @@ const Counter = () => {
                             <AccordionItemHeading>
                                 <AccordionItemButton className="flexCenter accordionItemButton">
                                     <AccordionItemState>
-                                        {({ expanded }) =>
+                                        {({ expanded }: { expanded: boolean }) =>
                                             expanded
                                                 ? setClassName("expanded")
                                                 : setClassName("collapsed")
