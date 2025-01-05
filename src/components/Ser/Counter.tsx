@@ -3,6 +3,16 @@ import { FaLaptopCode } from "react-icons/fa";
 import { FcProcess } from "react-icons/fc";
 import { LuPackageOpen } from "react-icons/lu";
 import { RiEmotionHappyLine } from "react-icons/ri";
+
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+    AccordionItemState,
+} from "react-accessible-accordion";
+
 const Counter = () => {
     return (
         <section>
@@ -11,28 +21,28 @@ const Counter = () => {
                     <div className="text-4xl mb-2">
                         <FaLaptopCode />
                     </div>
-                    <p>Completed projects</p>
+                    <h4>Completed projects</h4>
                 </nav>
 
                 <nav className="flex flex-col items-center">
                     <div className="text-4xl mb-2">
                         <FcProcess />
                     </div>
-                    <p>Processes</p>
+                    <h4>Processes</h4>
                 </nav>
 
                 <nav className="flex flex-col items-center">
                     <div className="text-4xl mb-2">
                         <LuPackageOpen />
                     </div>
-                    <p>Awards Received</p>
+                    <h4>Awards Received</h4>
                 </nav>
 
                 <nav className="flex flex-col items-center">
                     <div className="text-4xl mb-2">
                         <RiEmotionHappyLine />
                     </div>
-                    <p>Happy Clients</p>
+                    <h4>Happy Clients</h4>
                 </nav>
             </div>
         </section>

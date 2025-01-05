@@ -1,12 +1,18 @@
 .acct-dev{
     background-color: var(--bg-light);
-
 }
 
-.acct-dev nav nav{
+.acct-dev nav div{
         font-size: 2.5em;
-        /* margin-left: 2rem; */
         /* margin-top: 2rem; */
         color: var(--primary-color);
 
+}
+
+.acct-dev nav h4{
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: var(--font-color);
+    margin-top: 10px;
 }
