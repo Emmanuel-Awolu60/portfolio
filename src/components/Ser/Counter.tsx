@@ -6,7 +6,7 @@ import { RiEmotionHappyLine } from "react-icons/ri";
 const Counter = () => {
     return (
         <section>
-            <div className="flex mt-14">
+            <div className="flex acct-dev mt-20 pt-28 pb-28 mb-10 justify-around justify-items-center">
                 <nav>
                     <nav>
                         <FaLaptopCode />
@@ -15,6 +15,7 @@ const Counter = () => {
                         Completed projects
                     </p>
                 </nav>
+
                 <nav>
                     <nav>
                         <FcProcess />
