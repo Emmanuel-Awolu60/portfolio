@@ -9,6 +9,9 @@
     }
   ],
   "compilerOptions": {
+    "jsx": "react-jsx", // or "react" for older versions
+    "esModuleInterop": true,
+    "strict": true,
     "typeRoots": [
       "node_modules/@types"
     ]
