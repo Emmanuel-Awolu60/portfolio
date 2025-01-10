@@ -11,6 +11,14 @@
   "compilerOptions": {
     "jsx": "react-jsx", // or "react" for older versions
     "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es5", // Ensures compatibility with older environments
+    "module": "esnext", // Use modern modules
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "typeRoots": [
       "node_modules/@types"
