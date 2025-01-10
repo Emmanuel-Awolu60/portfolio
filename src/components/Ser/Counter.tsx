@@ -13,7 +13,10 @@ const Counter = () => {
                     <div className="text-4xl mb-2">
                         <FaLaptopCode />
                     </div>
-                    <CountUp start={8800} end={9000} duration={4} />
+                    <div className="stats_info">
+                        <CountUp start={500} end={700} duration={4} />
+                        <span>+</span>
+                    </div>
                     <h4>Completed projects</h4>
                 </nav>
 
@@ -21,7 +24,10 @@ const Counter = () => {
                     <div className="text-4xl mb-2">
                         <FcProcess />
                     </div>
-                    <CountUp start={8800} end={9000} duration={6} />
+                    <div className="stats_info">
+                        <CountUp start={50} end={60} duration={5} />
+                        <span>+</span>
+                    </div>
 
                     <h4>Processes</h4>
                 </nav>
@@ -30,7 +36,10 @@ const Counter = () => {
                     <div className="text-4xl mb-2">
                         <LuPackageOpen />
                     </div>
-                    <CountUp start={8800} end={9000} duration={4} />
+                    <div className="stats_info">
+                        <CountUp start={5} end={12} duration={6} />
+                        <span>+</span>
+                    </div>
 
                     <h4>Awards Received</h4>
                 </nav>
@@ -39,7 +48,10 @@ const Counter = () => {
                     <div className="text-4xl mb-2">
                         <RiEmotionHappyLine />
                     </div>
-                    <CountUp start={8800} end={9000} duration={4} />
+                    <div className="stats_info">
+                        <CountUp start={600} end={906} duration={4} />
+                        <span>+</span>
+                    </div>
 
                     <h4>Happy Clients</h4>
                 </nav>
