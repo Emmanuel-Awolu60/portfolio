@@ -1,14 +1,14 @@
 import "./Counter.css"
 import { FaLaptopCode } from "react-icons/fa";
-import { FcProcess } from "react-icons/fc";
 import { LuPackageOpen } from "react-icons/lu";
 import { RiEmotionHappyLine } from "react-icons/ri";
+import { VscServerProcess } from "react-icons/vsc";
 import CountUp from "react-countup"
 
 const Counter = () => {
     return (
-        <section>
-            <div className="flex acct-dev mt-20 pt-28 pb-28 mb-10 justify-around">
+        <section className="acct-dev ">
+            <div className="flex acct-dev2 mt-20 pt-28 pb-28 mb-10 justify-around">
                 <nav className="flex flex-col items-center">
                     <div className="text-4xl mb-2">
                         <FaLaptopCode />
@@ -22,7 +22,7 @@ const Counter = () => {
 
                 <nav className="flex flex-col items-center">
                     <div className="text-4xl mb-2">
-                        <FcProcess />
+                        {/* <FcProcess /> */} <VscServerProcess />
                     </div>
                     <div className="stats_info">
                         <CountUp start={50} end={60} duration={5} />

@@ -1,5 +1,12 @@
 .acct-dev{
     background-color: var(--bg-light);
+    margin-top: 10rem;
+}
+
+.acct-dev2{
+    width: 90%;
+    margin: 0 auto;
+
 }
 
 .acct-dev nav div{
