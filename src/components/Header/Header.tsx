@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.module.css";
+import "./Header.css";
 import { FaCode, FaBars, FaTimes } from "react-icons/fa";
 import { IoMoonOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
@@ -12,11 +12,11 @@ const Header: React.FC = () => {
 
     return (
         <>
-            <div className="header fixed w-full bg-white items-center grid">
+            <div className="header fixed w-full bg-white items-center grid h-24 shadow-md">
                 <div className="header-text flex justify-between items-center w-11/12 m-0 mx-auto">
                     {/* Logo */}
                     <nav className="name flex text-3xl items-center">
-                        <FaCode />
+                        <FaCode className="facode" />
                         <h2 className="pl-1">Emmanuel AO</h2>
                     </nav>
 
