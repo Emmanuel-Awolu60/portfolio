@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.css";
+import "./Header.module.css";
 import { FaCode, FaBars, FaTimes } from "react-icons/fa";
 import { IoMoonOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";

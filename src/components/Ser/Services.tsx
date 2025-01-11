@@ -1,23 +1,14 @@
-// import React from 'react';
-
+// Import necessary styles and libraries
 import "./Services.css";
-import { TbPencilCheck } from "react-icons/tb";
+import { TbPencilCheck, TbDeviceAnalytics } from "react-icons/tb";
 import { FaLaptopCode } from "react-icons/fa";
-import { TbDeviceAnalytics } from "react-icons/tb";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-
-// Import required modules
-import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 // Import the reusable SlideContent component
-import SlideContent from './SlideContent';
+import SlideContent from "./SlideContent";
 
 const Services: React.FC = () => {
     const handleButtonClick = (step: string) => {
@@ -26,101 +17,72 @@ const Services: React.FC = () => {
 
     return (
         <section className="mt-10">
-            <div className="mt-16 w-11/12 m-0 mx-auto sm:block justify-between">
-                <div className="flex justify-center items-center flex-col ">
+            <div className="mt-16 w-11/12 m-0 mx-auto">
+                <div className="flex justify-center items-center flex-col">
                     <h3 className="title-small">Service</h3>
                     <h1 className="text-4xl leading-9">What I do for you</h1>
                 </div>
 
-
                 <div className="top-top mt-12">
                     <Swiper
                         spaceBetween={30}
-                        pagination={{
-                            clickable: true,
-                        }}
+                        pagination={{ clickable: true }}
                         modules={[Pagination]}
                         className="mySwiper"
                         breakpoints={{
-                            // For screens larger than 1024px
-                            1024: {
-                                slidesPerView: 3,
-                            },
-                            // For screens between 640px and 1024px
-                            640: {
-                                slidesPerView: 2,
-                            },
-                            // For screens smaller than 640px
-                            0: {
-                                slidesPerView: 1,
-                            },
+                            1024: { slidesPerView: 3 }, // Large screens
+                            640: { slidesPerView: 2 },  // Medium screens
+                            0: { slidesPerView: 1 },    // Small screens
                         }}
                     >
-                        <SwiperSlide>
-                            <SlideContent
-                                icon={<TbPencilCheck />}
-                                step="01"
-                                title="Tech Writer"
-                                description="Crafting engaging, SEO-optimized content to simplify complex tech concepts."
-                                buttonText="Read More"
-                                onButtonClick={() => handleButtonClick("01")}
-                            />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <SlideContent
-                                icon={<FaLaptopCode />}
-                                step="02"
-                                title="Frontend Development"
-                                description="Building interactive and responsive user interfaces using modern web technologies."
-                                buttonText="Explore"
-                                onButtonClick={() => handleButtonClick("02")}
-                            />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <SlideContent
-                                icon={<TbPencilCheck />}
-                                step="03"
-                                title="Backend Development"
-                                description="Building robust, scalable server-side solutions to power seamless user experiences."
-                                buttonText="Contact Me"
-                                onButtonClick={() => handleButtonClick("03")}
-                            />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <SlideContent
-                                icon={<TbDeviceAnalytics />}
-                                step="04"
-                                title="Research & Analysis"
-                                description="Driving insights through data research and analysis for informed decisions."
-                                buttonText="Read More"
-                                onButtonClick={() => handleButtonClick("01")}
-                            />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <SlideContent
-                                icon={<TbPencilCheck />}
-                                step="02"
-                                title="Frontend Development"
-                                description="Building interactive and responsive user interfaces using modern web technologies."
-                                buttonText="Explore"
-                                onButtonClick={() => handleButtonClick("02")}
-                            />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                            <SlideContent
-                                icon={<TbPencilCheck />}
-                                step="03"
-                                title="Consulting"
-                                description="Providing tailored solutions to optimize your business processes and technology stack."
-                                buttonText="Contact Me"
-                                onButtonClick={() => handleButtonClick("03")}
-                            />
-                        </SwiperSlide>
+                        {[
+                            {
+                                icon: <TbPencilCheck />,
+                                step: "01",
+                                title: "Tech Writer",
+                                description: "Crafting engaging, SEO-optimized content to simplify complex tech concepts.",
+                                buttonText: "Read More",
+                            },
+                            {
+                                icon: <FaLaptopCode />,
+                                step: "02",
+                                title: "Frontend Development",
+                                description: "Building interactive and responsive user interfaces using modern web technologies.",
+                                buttonText: "Explore",
+                            },
+                            {
+                                icon: <TbPencilCheck />,
+                                step: "03",
+                                title: "Backend Development",
+                                description: "Building robust, scalable server-side solutions to power seamless user experiences.",
+                                buttonText: "Contact Me",
+                            },
+                            {
+                                icon: <TbDeviceAnalytics />,
+                                step: "04",
+                                title: "Research & Analysis",
+                                description: "Driving insights through data research and analysis for informed decisions.",
+                                buttonText: "Read More",
+                            },
+                            {
+                                icon: <TbPencilCheck />,
+                                step: "05",
+                                title: "Consulting",
+                                description: "Providing tailored solutions to optimize your business processes and technology stack.",
+                                buttonText: "Contact Me",
+                            },
+                        ].map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <SlideContent
+                                    icon={item.icon}
+                                    step={item.step}
+                                    title={item.title}
+                                    description={item.description}
+                                    buttonText={item.buttonText}
+                                    onButtonClick={() => handleButtonClick(item.step)}
+                                />
+                            </SwiperSlide>
+                        ))}
                     </Swiper>
                 </div>
             </div>

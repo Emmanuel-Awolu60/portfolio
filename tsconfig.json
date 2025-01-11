@@ -11,6 +11,7 @@
   "compilerOptions": {
     "jsx": "react-jsx", // or "react" for older versions
     "esModuleInterop": true,
+    "moduleResolution": "Node",
     "skipLibCheck": true,
     "target": "es5", // Ensures compatibility with older environments
     "module": "esnext", // Use modern modules
