@@ -5,7 +5,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Pagination } from "swiper/modules";
 
 // Import the reusable SlideContent component
 import SlideContent from "./SlideContent";
