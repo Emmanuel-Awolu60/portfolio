@@ -16,6 +16,7 @@ const Hero = () => {
 
                         <div className="typewriter title flex Typewriter">
                             <h1 className='mr-2'><strong>a</strong></h1>
+                            <span className="typewriterText">
                             <Typewriter
                                 words={['Freelance', 'Web developer', 'Tech Writer']}
                                 loop={true}
@@ -25,6 +26,7 @@ const Hero = () => {
                                 deleteSpeed={50}
                                 delaySpeed={1000}
                             />
+                            </span>
                         </div>
 
                     </span>
