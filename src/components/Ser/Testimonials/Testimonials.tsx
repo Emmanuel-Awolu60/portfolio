@@ -2,10 +2,7 @@ import "./Testimonials.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-// import { Navigation } from 'swiper';
-import { Pagination } from 'swiper';
-
-
+import { FreeMode, Pagination } from 'swiper';
 
 
 const Testimonials = () => {
@@ -19,14 +16,30 @@ const Testimonials = () => {
 
                 <div className="mt-20 w-3/4 m-auto">
                     <Swiper
+                        slidesPerView={2}
+                        spaceBetween={20}
+                        freeMode={true}
                         pagination={{
-                            dynamicBullets: true,
+                            clickable: true,
                         }}
-                        modules={[Pagination]}
+                        modules={[FreeMode, Pagination]}
                         className="mySwiper"
                     >
-                        <SwiperSlide>Slide 1</SwiperSlide>
-                        <SwiperSlide>Slide 2</SwiperSlide>
+                        <SwiperSlide>
+                            <blockquote>
+                                <q>
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius itaque possimus ullam pariatur inventore corporis sed dolorum optio aliquid placeat dolore fuga, a officiis neque odio est reiciendis nostrum corrupti!!"
+                                </q>
+                            </blockquote>
+
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <blockquote>
+                                <q>
+                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius itaque possimus ullam pariatur inventore corporis sed dolorum optio aliquid placeat dolore fuga, a officiis neque odio est reiciendis nostrum corrupti!!"
+                                </q>
+                            </blockquote>
+                        </SwiperSlide>
                         <SwiperSlide>Slide 3</SwiperSlide>
                         <SwiperSlide>Slide 4</SwiperSlide>
                         <SwiperSlide>Slide 5</SwiperSlide>

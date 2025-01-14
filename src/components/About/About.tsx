@@ -51,7 +51,7 @@ const About = () => {
                         </h1>
 
                         <p className='mt-10 mb-10'>
-                            I love graphic design and photography and have been working on my portfolio since 2016. You can download my resume in order to learn the details of my professional life as a designer and photographer. Contact me and we will discuss your projects!
+                            Since 2016, I have been creating and improving my portfolio because I have a strong interest in web development. To learn more about the specifics of my career path as a developer, you can download my resume. Let's get in touch to talk about your projects and how I can help you achieve your vision!
                         </p>
 
                         <button className='btn-style btn-stylecolor1'>
