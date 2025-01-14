@@ -11,7 +11,7 @@ import { Pagination } from 'swiper';
 const Testimonials = () => {
     return (
         <>
-            <div className="mt-40 w-4/5 m-auto">
+            <div className="mt-40 w-11/12 mx-auto">
                 <div className="flex justify-center items-center flex-col ">
                     <h3 className="title-small">Testimonials</h3>
                     <h1 className="text-4xl leading-9">What my clients think about Me   </h1>

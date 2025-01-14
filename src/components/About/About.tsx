@@ -39,7 +39,7 @@ const About = () => {
             </div>
 
             {/* //  resume sction */}
-            <div className='resume-banner mt-20 pt-28 pb-28 mb-10'>
+            <div className='resume-banner mt-20 pt-28 pb-28 mb-10 w-11/12 mx-auto'>
                 <div className='w-11/12 m-0 mx-auto'>
                     <div>
                         <h1 className="title-small mb-4">
