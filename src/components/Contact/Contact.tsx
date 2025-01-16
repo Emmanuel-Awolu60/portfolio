@@ -1,5 +1,6 @@
 import "./Contact.css"
-
+import { FaWhatsapp } from "react-icons/fa";
+import { MdOutlineMarkEmailRead } from "react-icons/md";
 const Contact = () => {
     return (
         <>
@@ -9,13 +10,18 @@ const Contact = () => {
                     <h1 className="text-4xl leading-9 pb-2">Are you ready to work together?</h1>
                     <p className="title-small">Let's start a project! Hire Me.</p>
                 </header>
-                <div className=" w-11/12 mx-auto flex">
-                    <div>
-                        <p>I’m open to any communication! Feel free to contact me any convenient way! I’m always interested in hearing about new projects and opportunities.</p>
-                        <span>
-                            <p>+2347060957515</p>
+                <div className=" w-11/12 mx-auto flex row mt-md-5 mt-5 pt-lg-3 justify-center">
+                    <div className="columns-lg">
+                        <p>I’m open to any communication! Feel free to contact
+                            me any convenient way! I’m always interested in
+                            hearing about new projects and opportunities.
+                        </p>
+                        <span className="flex">
+                            <FaWhatsapp />
+                            <p> +2347060957515</p>
                         </span>
-                        <span>
+                        <span className="flex self-center">
+                            <MdOutlineMarkEmailRead />
                             <a href="">emmanelawolu8@gmail.com</a>
                         </span>
                         {/* <span></span> */}
