@@ -4,7 +4,7 @@ import Hero from './components/Hero/Hero'
 import About from './components/About/About'
 import Services from './components/Ser/Services'
 import Counter from './components/Ser/Counter'
-import Testimonials from './components/Testimonials/Testimonials'
+import Contact from './components/Contact/Contact'
 // import Ser from './components/Ser/Services'
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <About />
       <Services />
       <Counter />
-      <Testimonials />
+      <Contact />
     </>
   )
 }

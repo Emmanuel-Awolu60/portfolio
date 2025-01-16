@@ -3,6 +3,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { LuPackageOpen } from "react-icons/lu";
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { VscServerProcess } from "react-icons/vsc";
+import { FaAward } from "react-icons/fa";
 import CountUp from "react-countup"
 
 const Counter = () => {
@@ -17,7 +18,7 @@ const Counter = () => {
                         <CountUp start={500} end={700} duration={4} />
                         <span>+</span>
                     </div>
-                    <h4>Completed projects</h4>
+                    <h4>Projects Done</h4>
                 </nav>
 
                 <nav className="flex flex-col items-center">
@@ -29,19 +30,20 @@ const Counter = () => {
                         <span>+</span>
                     </div>
 
-                    <h4>Processes</h4>
+                    <h4>Satisfied Clients</h4>
                 </nav>
 
                 <nav className="flex flex-col items-center">
                     <div className="text-4xl mb-2">
-                        <LuPackageOpen />
+                        {/* <LuPackageOpen /> */}
+                        <FaAward />
                     </div>
                     <div className="stats_info">
                         <CountUp start={5} end={12} duration={6} />
                         <span>+</span>
                     </div>
 
-                    <h4>Awards Received</h4>
+                    <h4>Awards</h4>
                 </nav>
 
                 <nav className="flex flex-col items-center">
