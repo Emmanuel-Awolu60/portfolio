@@ -30,17 +30,20 @@ const Contact = () => {
 
                     <div className="container col-lg-7 mt-lg-0 mt-md-5 mt-4 HomePageContactForm">
                         <form action="" method="post">
-                            <div className="twice-two">
-
-                                <input type="text" className="form-control"
-                                    name="w3lName" id="w3lName"
-                                    placeholder="Name" required>
-                                </input>
-                                <div>
-                                    <input type="email" className="form-control"
-                                        name="w3lSender" id="w3lSender"
-                                        placeholder="Email" required>
-                                    </input>
+                            <div className="">
+                                <div className="twice-two flex">
+                                    <div className="w-1/2">
+                                        <input type="text" className="form-control"
+                                            name="w3lName" id="w3lName"
+                                            placeholder="Name" required>
+                                        </input>
+                                    </div>
+                                    <div className="w-1/2">
+                                        <input type="email" className="form-control"
+                                            name="w3lSender" id="w3lSender"
+                                            placeholder="Email" required>
+                                        </input>
+                                    </div>
                                 </div>
                                 <div className="twice">
                                     <input type="text" className="form-control"
