@@ -4,31 +4,40 @@ import { MdOutlineMarkEmailRead } from "react-icons/md";
 const Contact = () => {
     return (
         <>
-            <div className="">
-                <header className="mb-12 mt-32 flex justify-center items-center flex-col">
+            <div className="mt-16 w-11/12 m-auto">
+                <header className="mb-12 mt-16 w-11/12 m-auto flex justify-center items-center flex-col">
                     <h4 className="text-xl title-small leading-9">Get in touch with Me</h4>
                     <h1 className="text-4xl leading-9 pb-2">Are you ready to work together?</h1>
                     <p className="title-small">Let's start a project! Hire Me.</p>
                 </header>
                 <div className=" w-11/12 mx-auto flex row mt-md-5 mt-5 pt-lg-3 justify-center">
                     <div className="columns-lg">
-                        <p>I’m open to any communication! Feel free to contact
-                            me any convenient way! I’m always interested in
-                            hearing about new projects and opportunities.
+                        <p className="text-xl mb-9 leading-7">I’m open to any communication! Feel free to contact <br /> me any convenient way! I’m always interested in  hearing about new projects and opportunities.
                         </p>
-                        <span className="flex">
-                            <FaWhatsapp />
-                            <p> +2347060957515</p>
-                        </span>
+
+                        <ul className="address mt-md-5 mt-4">
+                            <li className="mb-3">
+                                <p className="flex items-center">
+                                    <span className="pr-2"><FaWhatsapp /></span>
+                                    <a href="tel:+234-706-095-7515">+234-706-095-7515</a>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p className="flex items-center">
+                                    <span><MdOutlineMarkEmailRead /></span>
+                                    <a href="mailto">emmanelawolu8@gmail.com</a>
+                                </p>
+                            </li>
+                        </ul>
                         <span className="flex self-center">
-                            <MdOutlineMarkEmailRead />
-                            <a href="">emmanelawolu8@gmail.com</a>
+
                         </span>
                         {/* <span></span> */}
                     </div>
 
 
-                    <div className="container col-lg-7 mt-lg-0 mt-md-5 mt-4 HomePageContactForm">
+                    <div className="w-11/12 container col-lg-7 mt-lg-0 mt-md-5 mt-4 HomePageContactForm bo">
                         <form action="" method="post">
                             <div className="">
                                 <div className="twice-two flex">
