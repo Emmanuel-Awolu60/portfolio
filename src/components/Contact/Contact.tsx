@@ -12,21 +12,29 @@ const Contact = () => {
                 </header>
                 <div className=" w-11/12 mx-auto flex row mt-md-5 mt-5 pt-lg-3 justify-center">
                     <div className="columns-lg">
-                        <p className="text-xl mb-9 leading-7">I’m open to any communication! Feel free to contact <br /> me any convenient way! I’m always interested in  hearing about new projects and opportunities.
+                        <p className="text-xl mb-9 leading-7">
+                            I’m open to any communication! Feel free to contact <br />
+                            me any convenient way! I’m always interested in
+                            hearing about new projects and opportunities.
                         </p>
 
                         <ul className="address mt-md-5 mt-4">
                             <li className="mb-3">
-                                <p className="flex items-center">
-                                    <span className="pr-2"><FaWhatsapp /></span>
-                                    <a href="tel:+234-706-095-7515">+234-706-095-7515</a>
+                                <p>
+                                    <h1 className="flex items-center text-2xl">
+                                        <span className="pr-2"><FaWhatsapp /></span>
+                                        <a href="tel:+234-706-095-7515" className="con">+234-706-095-7515</a>
+                                    </h1>
                                 </p>
                             </li>
 
                             <li>
-                                <p className="flex items-center">
-                                    <span><MdOutlineMarkEmailRead /></span>
-                                    <a href="mailto">emmanelawolu8@gmail.com</a>
+                                <p>
+                                    <h1 className="flex items-center text-2xl">
+                                        <span className="pr-2"><MdOutlineMarkEmailRead /></span>
+                                        <a href="mailto" className="con">emmanelawolu8@gmail.com</a>
+                                    </h1>
+
                                 </p>
                             </li>
                         </ul>
