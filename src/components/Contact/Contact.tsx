@@ -10,11 +10,13 @@ const Contact = () => {
                     <h1 className="text-4xl leading-9 pb-2">Are you ready to work together?</h1>
                     <p className="title-small">Let's start a project! Hire Me.</p>
                 </header>
-                <div className=" w-11/12 mx-auto flex row mt-md-5 mt-5 pt-lg-3 justify-center">
-                    <div className="columns-lg">
+
+
+                <div className=" w-11/12 mx-auto flex row mt-md-5 mt-8 pt-lg-3 justify-center">
+                    <div className="columns-lg w-4/5">
                         <p className="text-xl mb-9 leading-7">
                             I’m open to any communication! Feel free to contact <br />
-                            me any convenient way! I’m always interested in
+                            me any convenient way! I’m always interested in <br />
                             hearing about new projects and opportunities.
                         </p>
 
@@ -45,24 +47,24 @@ const Contact = () => {
                     </div>
 
 
-                    <div className="w-11/12 container col-lg-7 mt-lg-0 mt-md-5 mt-4 HomePageContactForm bo">
+                    <div className="w-4/5 container col-lg-7 mt-lg-0 mt-md-5 mt-4 HomePageContactForm bo">
                         <form action="" method="post">
                             <div className="">
-                                <div className="twice-two flex">
+                                <div className="twice-two flex gap-5 mb-6">
                                     <div className="w-1/2">
                                         <input type="text" className="form-control"
-                                            name="w3lName" id="w3lName"
+                                            name="Name" id="Name"
                                             placeholder="Name" required>
                                         </input>
                                     </div>
                                     <div className="w-1/2">
                                         <input type="email" className="form-control"
-                                            name="w3lSender" id="w3lSender"
+                                            name="Sender" id="Sender"
                                             placeholder="Email" required>
                                         </input>
                                     </div>
                                 </div>
-                                <div className="twice">
+                                <div className="twice mb-6">
                                     <input type="text" className="form-control"
                                         name="w3lSubject" id="w3lSubject"
                                         placeholder="Subject"

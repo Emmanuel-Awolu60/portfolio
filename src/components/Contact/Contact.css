@@ -14,4 +14,13 @@
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.con {}
+form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+
+.twice-two {
+    /* grid-template-columns: 1fr 1fr; */
+    /* margin-bottom: 20px; */
+}
