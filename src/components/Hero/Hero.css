@@ -50,6 +50,7 @@ p {
 
 .btn-stylecolor1 {
     background-color: var(--primary-color);
+    color: #fff;
 }
 
 .title {
@@ -60,10 +61,6 @@ p {
 
 .title span {
     font-weight: 300;
-}
-
-.typewriter {
-    /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .banner {
@@ -83,9 +80,10 @@ p {
     .continer h1.title {
         font-size: 35px;
     }
-    .typewriterText{
-        font-size:2.6rem;
-        padding-top: 7px; 
+
+    .typewriterText {
+        font-size: 2.6rem;
+        padding-top: 7px;
     }
 }
 
