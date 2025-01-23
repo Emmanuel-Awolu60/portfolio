@@ -6,9 +6,9 @@ const Contact = () => {
         <>
             <div className="container mt-16 w-11/12 m-auto">
                 <header className="mb-12 mt-16 w-11/12 m-auto flex justify-center items-center flex-col">
-                    <h4 className="text-xl title-small leading-9">Get in touch with Me</h4>
+                    <h4 className="text-lg leading-9">Get in touch with Me</h4>
                     <h1 className="text-4xl leading-9 pb-2">Are you ready to work together?</h1>
-                    <p className="title-small">Let's start a project! Hire Me.</p>
+                    <p className="text-lg">Let's start a project! Hire Me.</p>
                 </header>
 
 
