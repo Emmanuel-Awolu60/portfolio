@@ -1,6 +1,6 @@
 import "./Counter.css"
 import { FaLaptopCode } from "react-icons/fa";
-import { LuPackageOpen } from "react-icons/lu";
+// import { LuPackageOpen } from "react-icons/lu";
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { VscServerProcess } from "react-icons/vsc";
 import { FaAward } from "react-icons/fa";
