@@ -4,11 +4,11 @@ import { Typewriter } from 'react-simple-typewriter';
 const Hero = () => {
     return (
         <>
-            <div className="continer banner ">
-                <section className=' py-5 pt-40 w-11/12 mx-auto '>
+            <main className="main-container continer banner ">
+                <div className=' py-5 pt-40 w-11/12 mx-auto '>
                     <div className='second-continer w-11/12 mx-auto flex justify-items-center items-center'>
 
-                        <div className='right-banner w-1/2'>
+                        <section className='right-banner w-1/2'>
                             <span>
                                 <h3 className='title-small '>HELLO</h3>
                                 <h1 className='mb-2 title'>
@@ -20,7 +20,7 @@ const Hero = () => {
                                     <h1 className='mr-2'><strong>a</strong></h1>
                                     <span className="typewriterText">
                                         <Typewriter
-                                            words={['Freelance', 'Web developer', 'Tech Writer']}
+                                            words={['Freelance', 'Software', 'Developer', 'Tech Writer']}
                                             loop={true}
                                             cursor
                                             cursorStyle="|"
@@ -41,7 +41,7 @@ const Hero = () => {
                                 <button className='btn-style btn-stylecolor1 text-white mr-4'>Hire Me</button>
                                 <button className='btn-style'>Portfolio</button>
                             </span>
-                        </div>
+                        </section>
 
                         <div className='left-banner w-1/2'>
                             {/* <img src="./src/assets/images/heroAo.jpg" alt="Logo" className='img-fluid w-4/5 ml-16' /> */}
@@ -55,8 +55,8 @@ const Hero = () => {
                             />
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </main>
         </>
     )
 }

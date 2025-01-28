@@ -9,7 +9,7 @@ import CountUp from "react-countup"
 const Counter = () => {
     return (
         <>
-            <section className="acct-dev ">
+            <main className="main-container acct-dev ">
                 <div className="flex acct-dev2 mt-20 pt-28 pb-28 mb-10 justify-around">
                     <nav className="flex flex-col items-center">
                         <div className="text-4xl mb-2">
@@ -59,7 +59,7 @@ const Counter = () => {
                         <h4>Happy Clients</h4>
                     </nav>
                 </div>
-            </section>
+            </main>
         </>
     )
 }
