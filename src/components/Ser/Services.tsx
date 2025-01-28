@@ -55,41 +55,43 @@ const Services: React.FC = () => {
     ];
 
     return (
-        <section className="mt-10 w-11/12 mx-auto">
-            <div className="mt-16 w-11/12 m-auto ">
-                <header className="flex justify-center items-center flex-col">
-                    <h3 className="title-small">Service</h3>
-                    <h1 className="text-4xl leading-9">What I do for you</h1>
-                </header>
+        <>
+            <section className="mt-10 w-11/12 mx-auto">
+                <div className="mt-16 w-11/12 m-auto ">
+                    <header className="flex justify-center items-center flex-col">
+                        <h3 className="title-small">Service</h3>
+                        <h1 className="text-4xl leading-9">What I do for you</h1>
+                    </header>
 
-                <div className="mt-12">
-                    <Swiper
-                        spaceBetween={30}
-                        pagination={{ clickable: true }}
-                        modules={[Pagination]}
-                        className="mySwiper"
-                        breakpoints={{
-                            1024: { slidesPerView: 3 }, // Large screens
-                            640: { slidesPerView: 2 },  // Medium screens
-                            0: { slidesPerView: 1 },    // Small screens
-                        }}
-                    >
-                        {services.map((service, index) => (
-                            <SwiperSlide key={index}>
-                                <SlideContent
-                                    icon={service.icon}
-                                    step={service.step}
-                                    title={service.title}
-                                    description={service.description}
-                                    buttonText={service.buttonText}
-                                    onButtonClick={() => handleButtonClick(service.step)}
-                                />
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                    <div className="mt-12">
+                        <Swiper
+                            spaceBetween={30}
+                            pagination={{ clickable: true }}
+                            modules={[Pagination]}
+                            className="mySwiper"
+                            breakpoints={{
+                                1024: { slidesPerView: 3 }, // Large screens
+                                640: { slidesPerView: 2 },  // Medium screens
+                                0: { slidesPerView: 1 },    // Small screens
+                            }}
+                        >
+                            {services.map((service, index) => (
+                                <SwiperSlide key={index}>
+                                    <SlideContent
+                                        icon={service.icon}
+                                        step={service.step}
+                                        title={service.title}
+                                        description={service.description}
+                                        buttonText={service.buttonText}
+                                        onButtonClick={() => handleButtonClick(service.step)}
+                                    />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 

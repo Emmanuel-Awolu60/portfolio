@@ -20,20 +20,22 @@ const SlideContent: React.FC<SlideContentProps> = ({
     onButtonClick = () => { },
 }) => {
     return (
-        <div className='top-div py-10 px-9 mb-16 rounded-lg transition-all relative md:block sm:block'>
-            <div className="flex md:block sm:block items-center mb-10">
-                <span className="T-icon text-3xl mr-2">{icon}</span>
-                <h1 className="number absolute text-6xl font-bold">{step}</h1>
-            </div>
-            <h2 className="text-2xl font-semibold mb-2">{title}</h2>
-            <p className="text-gray-600 mb-4">{description}</p>
-            <button
-                className=""
-                onClick={onButtonClick}
-            >
-                {buttonText}
-            </button>
-        </div>
+        <>
+            <main className='main-container top-div py-10 px-9 mb-16 rounded-lg transition-all relative md:block sm:block'>
+                <div className="flex md:block sm:block items-center mb-10">
+                    <span className="T-icon text-3xl mr-2">{icon}</span>
+                    <h1 className="number absolute text-6xl font-bold">{step}</h1>
+                </div>
+                <h2 className="text-2xl font-semibold mb-2">{title}</h2>
+                <p className="text-gray-600 mb-4">{description}</p>
+                <button
+                    className=""
+                    onClick={onButtonClick}
+                >
+                    {buttonText}
+                </button>
+            </main>
+        </>
     );
 };
 

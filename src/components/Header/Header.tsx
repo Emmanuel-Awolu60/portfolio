@@ -12,7 +12,7 @@ const Header: React.FC = () => {
 
     return (
         <>
-            <div className="header fixed w-full bg-white items-center grid h-24 shadow-md">
+            <main className="main-container header fixed w-full bg-white items-center grid h-24 shadow-md">
                 <div className="header-text flex justify-between items-center w-11/12 m-0 mx-auto">
                     {/* Logo */}
                     <nav className="name flex text-3xl items-center">
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
                         </ul>
                     </nav>
                 </div>
-            </div>
+            </main>
         </>
     );
 };

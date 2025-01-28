@@ -4,13 +4,12 @@ import { MdOutlineMarkEmailRead } from "react-icons/md";
 const Contact = () => {
     return (
         <>
-            <div className="container mt-16 w-11/12 m-auto">
+            <main className="main-container container mt-16 w-11/12 m-auto">
                 <header className="mb-12 mt-16 w-11/12 m-auto flex justify-center items-center flex-col">
                     <h4 className="text-lg leading-9">Get in touch with Me</h4>
                     <h1 className="text-4xl leading-9 pb-2">Are you ready to work together?</h1>
                     <p className="text-lg">Let's start a project! Hire Me.</p>
                 </header>
-
 
                 <div className=" w-11/12 mx-auto flex mt-8 justify-center">
 
@@ -42,11 +41,9 @@ const Contact = () => {
                             </li>
                         </ul>
                         <span className="flex self-center">
-
                         </span>
                         {/* <span></span> */}
                     </div>
-
 
                     <div className="w-4/5 container mr-16">
                         <form action="" method="post">
@@ -82,12 +79,11 @@ const Contact = () => {
                                     <button type="submit" className="btn btn-style  btn-stylecolor1 mt-2 mb-8">
                                         Send Message</button>
                                 </div>
-
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>
+            </main>
         </>
     )
 }
