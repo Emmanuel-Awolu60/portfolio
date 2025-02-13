@@ -1,5 +1,5 @@
 // Import necessary styles and libraries
-import "./Services.css";
+import "./Services.css"
 import { TbPencilCheck, TbDeviceAnalytics } from "react-icons/tb";
 import { FaLaptopCode } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
