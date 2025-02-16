@@ -1,39 +1,40 @@
-// import "./Footer.css"
-import "../Footer/Footer.css"
+import "../Footer/Footer.css";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { LuGithub } from "react-icons/lu";
+
 const Footer = () => {
     return (
-        <>
-            <footer className='w-full h-20'>
-                <div className='mt-16 w-4/5 m-auto footer-div flex justify-between items-center '>
-                    <div className='text-white'>
-                        <p className='text-white'>
-                            © Copyright 2025 Portfolio. Design by
-                            <a href="https://linktr.ee/Emmanuel_Awolu" target='_blank' className='ml-2'>Emmanuel Awolu Oluwapelumi.</a>
-                        </p>
-                    </div>
-                    <div>
-                        <li className='list-none'>
-                            <p className='flex text-white'>
-                                <a href="https://github.com/Emmanuel-Awolu60" target="_blank">
-                                    <LuGithub />
-                                </a>
-                                <a href='https://x.com/dev__eao' className="ml-2 mr-2" target="_blank">
-                                    <FaXTwitter />
-                                </a>
-
-                                <a href="https://www.linkedin.com/in/emmanuel-awolu-463304254/" target="_blank">
-                                    <FaLinkedinIn />
-                                </a>
-                            </p>
-                        </li>
-                    </div>
+        <footer className='w-full h-auto bg-gray-900 py-6'>
+            <div className='mt-8 w-4/5 mx-auto footer-div flex flex-col md:flex-row justify-between items-center text-center md:text-left'>
+                <div className='text-white mb-4 md:mb-0'>
+                    <p className='text-white text-sm sm:text-base'>
+                        © Copyright 2025 Portfolio. Design by
+                        <a href="https://linktr.ee/Emmanuel_Awolu" target='_blank' className='ml-2 text-blue-400 hover:underline'>Emmanuel Awolu Oluwapelumi.</a>
+                    </p>
                 </div>
-            </footer>
-        </>
-    )
-}
+                <div>
+                    <ul className='flex justify-center md:justify-end space-x-4'>
+                        <li>
+                            <a href="https://github.com/Emmanuel-Awolu60" target="_blank" className='text-white text-xl hover:text-gray-400'>
+                                <LuGithub />
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://x.com/dev__eao' target="_blank" className='text-white text-xl hover:text-gray-400'>
+                                <FaXTwitter />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/emmanuel-awolu-463304254/" target="_blank" className='text-white text-xl hover:text-gray-400'>
+                                <FaLinkedinIn />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    );
+};
 
-export default Footer
+export default Footer;
