@@ -1,4 +1,5 @@
-import "./Footer.css"
+// import "./Footer.css"
+import "../Footer/Footer.css"
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { LuGithub } from "react-icons/lu";

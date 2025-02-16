@@ -5,7 +5,8 @@ import About from './components/About/About'
 import Services from './components/Ser/Services'
 import Counter from './components/Ser/Counter'
 import Contact from './components/Contact/Contact'
-import Footer from './Footer/Footer'
+// import Footer from './Footer/Footer'
+import Footer from './components/Footer/Footer'
 // import Ser from './components/Ser/Services'
 
 
