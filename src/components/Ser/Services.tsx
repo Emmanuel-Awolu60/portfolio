@@ -2,15 +2,10 @@
 import "./Services.css"
 import { TbPencilCheck, TbDeviceAnalytics } from "react-icons/tb";
 import { FaLaptopCode } from "react-icons/fa";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import { Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Pagination } from "swiper";
-
 // Import the reusable SlideContent component
 import SlideContent from "./SlideContent";
 
