@@ -1,4 +1,8 @@
-.top-div{
+* {
+    box-sizing: border-box;
+}
+
+.top-div {
     transition: all 0.5s ease 0s;
     border-radius: var(--border-radius);
     background-color: var(--bg-light);
@@ -16,8 +20,8 @@ h1.number {
     transition: 0.3s ease-in-out;
 }
 
-.T-icon{
-  color: var(--primary-color);
+.T-icon {
+    color: var(--primary-color);
     font-size: 30px;
 }
 
@@ -25,4 +29,12 @@ h1.number {
 /* Default styling for larger screens */
 .top-div {
     display: block;
+}
+
+.ServicesBtn {
+    color: var(--primary-color);
+}
+
+.ServicesBtn:hover {
+    border-bottom: 2px solid var(--primary-color);
 }

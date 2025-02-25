@@ -1,5 +1,5 @@
 // SlideContent.tsx
-import React from 'react';
+// import React from 'react';
 import "./SlideContent.css"
 
 interface SlideContentProps {
@@ -29,7 +29,7 @@ const SlideContent: React.FC<SlideContentProps> = ({
                 <h2 className="text-2xl font-semibold mb-2">{title}</h2>
                 <p className="text-gray-600 mb-4">{description}</p>
                 <button
-                    className=""
+                    className="ServicesBtn"
                     onClick={onButtonClick}
                 >
                     {buttonText}

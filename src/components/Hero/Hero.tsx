@@ -1,4 +1,3 @@
-// import React from 'react'
 import "./Hero.css"
 import { Typewriter } from 'react-simple-typewriter';
 const Hero = () => {
