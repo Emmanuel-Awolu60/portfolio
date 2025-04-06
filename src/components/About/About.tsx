@@ -7,9 +7,6 @@ const About = () => {
                 <div className='about-banner flex mt-24 items-center w-11/12 m-0 mx-auto pb-5'>
                     <div className='about-img-banner left-banner ' >
                         <div className="">
-                            {/* <img src="./src/assets/images/heroAo.jpg" alt="Logo" className='about-img w-11/12 h-full rounded-xl' /> */}
-                            {/* <img src="./public/img/eaopic.jpg" alt="Logo" className='img-fluid w-4/5 ml-16' /> */}
-                            {/* <img src="/img/eaopic.jpg" alt="Logo" className="img-fluid w-4/5 ml-16" /> */}
                             <img
                                 src="/img/eaopic.jpg"
                                 alt="Logo"
@@ -17,7 +14,6 @@ const About = () => {
                                 onError={(e) => (e.currentTarget.src = "/img/fallback.jpg")}
                             />
                         </div>
-
                     </div>
 
                     <div className="right-banner">
